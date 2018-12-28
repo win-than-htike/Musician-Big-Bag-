@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="@string/title_event"/>
+
+    <item
+            android:id="@+id/nav_cartoon"
+            android:icon="@drawable/cartoon"
+            android:title="@string/title_cartoon"/>
+
+    <item
+            android:id="@+id/nav_songs"
+            android:icon="@drawable/song"
+            android:title="@string/title_songs"/>
+
+    <item
+            android:id="@+id/nav_writing"
+            android:icon="@drawable/pen"
+            android:title="@string/title_writing"/>
+
+    <item
+            android:id="@+id/nav_arts"
+            android:icon="@drawable/art"
+            android:title="@string/title_art"/>
+
+</menu>

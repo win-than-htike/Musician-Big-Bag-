@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.onething.musicianbigbag"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation rootProject.ext.libraries.appCompat
+    implementation rootProject.ext.libraries.customtab
+    implementation rootProject.ext.libraries.constraintLayout
+    implementation rootProject.ext.libraries.cardView
+    implementation rootProject.ext.libraries.recyclerView
+    implementation rootProject.ext.libraries.designSupport
+
+    implementation rootProject.ext.libraries.glide
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor rootProject.ext.aptLibraries.glideCompiler
+
+    implementation rootProject.ext.libraries.butterknife
+    annotationProcessor rootProject.ext.aptLibraries.butterknifeCompiler
+
+    implementation rootProject.ext.libraries.retrofit
+    implementation rootProject.ext.libraries.retrofitConverter
+    implementation rootProject.ext.libraries.retrofitAdapter
+
+    implementation rootProject.ext.libraries.okhttp
+    implementation rootProject.ext.libraries.okhttpLogging
+
+    implementation rootProject.ext.libraries.mmtextview
+
+    compile 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+
+    testImplementation 'junit:junit:4.12'
+
+
+
+}

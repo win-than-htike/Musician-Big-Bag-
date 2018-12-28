@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Musician ( Big Bag )</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_event">Event</string>
+    <string name="title_cartoon">Cartoon</string>
+    <string name="title_songs">Songs</string>
+    <string name="title_writing">Writing</string>
+    <string name="title_art">Arts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_event_title">Starry Night</string>
+    <string name="dummy_event_group">Big Bag</string>
+    <string name="dummy_event_price">5000 Ks</string>
+    <string name="dummy_event_place">Myanmar Event Park</string>
+    <string name="dummy_event_time">12 Oct 2018 ( 6:30 pm )</string>
+    <string name="dummy_story_title">Story 1</string>
+    <string name="dummy_song_count">12 Songs</string>
+    <string name="dummy_album_title">IDGAF</string>
+    <string name="dummy_album_price">2000 Ks</string>
+    <string name="title_event_group">Group</string>
+    <string name="title_event_datetime"><![CDATA[Date & Time]]></string>
+    <string name="title_event_location">Location</string>
+</resources>

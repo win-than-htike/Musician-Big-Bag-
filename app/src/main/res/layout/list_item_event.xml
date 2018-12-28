@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        app:cardCornerRadius="@dimen/margin_small"
+        app:cardElevation="@dimen/margin_small">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <FrameLayout
+                android:id="@+id/fl_image_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/event_image_height">
+
+            <ImageView
+                    android:id="@+id/iv_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/event_placeholder"/>
+
+            <org.mmtextview.components.MMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white_full"
+                    android:padding="@dimen/margin_medium"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/margin_medium_2"
+                    android:text="@string/dummy_event_price"/>
+
+        </FrameLayout>
+
+        <org.mmtextview.components.MMTextView
+                android:id="@+id/tv_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_image_container"
+                android:text="@string/dummy_event_title"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/margin_medium_2"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2"
+                android:textColor="@color/black_full"/>
+
+        <org.mmtextview.components.MMTextView
+                android:id="@+id/tv_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_event_title"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2"
+                android:paddingTop="@dimen/margin_small"
+                android:drawableStart="@drawable/ic_group_black_24dp"
+                android:drawablePadding="@dimen/margin_medium"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_full"
+                android:text="@string/dummy_event_group"/>
+
+        <org.mmtextview.components.MMTextView
+                android:id="@+id/tv_event_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_group"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2"
+                android:paddingTop="@dimen/margin_small"
+                android:drawableStart="@drawable/ic_place_black_24dp"
+                android:drawablePadding="@dimen/margin_medium"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_full"
+                android:text="@string/dummy_event_place"/>
+
+        <org.mmtextview.components.MMTextView
+                android:id="@+id/tv_event_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_event_place"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingEnd="@dimen/margin_medium_2"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_medium_2"
+                android:drawableStart="@drawable/ic_time_black_24dp"
+                android:drawablePadding="@dimen/margin_medium"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_full"
+                android:text="@string/dummy_event_time"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

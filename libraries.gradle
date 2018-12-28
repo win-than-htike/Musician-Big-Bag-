@@ -1,0 +1,93 @@
+ext {
+    minSdkVersion = 21 //Android 4.4
+    compileSdkVersion = 28 //Android 8.0
+    buildToolVersion = "28.0.3"
+
+    //Android
+    androidSupportVersion = "28.0.0"
+    constraintlayoutVersion = "1.1.3"
+    butterknifeVersion = "8.8.1"
+    okhttpVersion = "3.9.1"
+    retrofitVersion = "2.3.0"
+    glideVersion = "4.7.1"
+    daggerVersion = "2.12"
+    jpoetVersion = "1.9.0"
+    javaxVersion = "1"
+    javaxAnnotationVersion = "1.0"
+    mmtextViewVersion = "1.10"
+    lifecycleVersion = "1.1.1"
+    rxAndroidVersion = "2.0.2"
+    rxJavaVersion = "2.x.x"
+    firebaseVersion = "16.0.1"
+    firebaseCloudMessagingVersion = "17.3.0"
+    roomVersion = "1.1.1"
+    mockitoVersion = "2.7.22"
+    mokitoKotlin = "2.0.0-RC1"
+    hamcrestVersion = "1.3"
+    robolectricVersion = "3.5.1"
+    customtabVersion = "27.0.2"
+
+    //Testing
+    junitVersion = "4.12"
+    supportTestVersion = "1.0.1"
+    espressoVersion = "3.0.1"
+    uiAutomatorVersion = "2.0.0"
+
+    libraries = [
+            appCompat           : "com.android.support:appcompat-v7:${androidSupportVersion}",
+            support             : "com.android.support:support-v4:${androidSupportVersion}",
+            designSupport       : "com.android.support:design:${androidSupportVersion}",
+            customtab           : "com.android.support:customtabs:${customtabVersion}",
+            vectorSupport       : "com.android.support:support-vector-drawable:${androidSupportVersion}",
+            cardView            : "com.android.support:cardview-v7:${androidSupportVersion}",
+            recyclerView        : "com.android.support:recyclerview-v7:${androidSupportVersion}",
+            gridLayout          : "com.android.support:gridlayout-v7:${androidSupportVersion}",
+            constraintLayout    : "com.android.support.constraint:constraint-layout:${constraintlayoutVersion}",
+            butterknife         : "com.jakewharton:butterknife:${butterknifeVersion}",
+            okhttp              : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            okhttpLogging       : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+            retrofit            : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter   : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter     : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            glide               : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideAnnotation     : "com.github.bumptech.glide:compiler:${glideVersion}",
+            dagger              : "com.google.dagger:dagger:${daggerVersion}",
+            javax               : "javax.inject:javax.inject:${javaxVersion}",
+            javapoet            : "com.squareup:javapoet:${jpoetVersion}",
+            javaxannotation     : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            mmtextview          : "org.mmtextview:mmtextview:${mmtextViewVersion}",
+            archComponent       : "android.arch.lifecycle:extensions:${lifecycleVersion}",
+            archComponentRuntime: "android.arch.lifecycle:runtime:${lifecycleVersion}",
+            rxAndroid           : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            rxJava              : "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+            firebaseCore        : "com.google.firebase:firebase-core:${firebaseVersion}",
+            firebaseStorage     : "com.google.firebase:firebase-storage:${firebaseVersion}",
+            firebaseMessaging   : "com.google.firebase:firebase-messaging:${firebaseCloudMessagingVersion}",
+            room                : "android.arch.persistence.room:runtime:${roomVersion}",
+            roomRxJava          : "android.arch.persistence.room:rxjava2:${roomVersion}"
+    ]
+
+    aptLibraries = [
+            roomCompiler       : "android.arch.persistence.room:compiler:${roomVersion}",
+            butterknifeCompiler: "com.jakewharton:butterknife-compiler:${butterknifeVersion}",
+            daggerCompiler     : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            glideCompiler      : "com.github.bumptech.glide:compiler:${glideVersion}",
+    ]
+
+    testLibraries = [
+            junit             : "junit:junit:${junitVersion}",
+            supportAnnotations: "com.android.support:support-annotations:${androidSupportVersion}",
+            supportTestRunner : "com.android.support.test:runner:${supportTestVersion}",
+            supportTestRules  : "com.android.support.test:rules:${supportTestVersion}",
+            espresso          : "com.android.support.test.espresso:espresso-core:${espressoVersion}",
+            espressoContrib   : "com.android.support.test.espresso:espresso-contrib:${espressoVersion}",
+            espressoIntents   : "com.android.support.test.espresso:espresso-intents:${espressoVersion}",
+            uiautomator     : "com.android.support.test.uiautomator:uiautomator-v18:${uiAutomatorVersion}",
+            hamcrest          : "org.hamcrest:hamcrest-libraries:${hamcrestVersion}",
+            mockitoCore       : "org.mockito:mockito-core:${mockitoVersion}",
+            mockitoAndroid    : "org.mockito:mockito-android:${mockitoVersion}",
+            mokitoKotlin      : "com.nhaarman.mockitokotlin2:mockito-kotlin:${mokitoKotlin}",
+            liveDataTestHelper: "android.arch.core:core-testing:${lifecycleVersion}",
+            robolectric       : "org.robolectric:robolectric:${robolectricVersion}"
+    ]
+}
