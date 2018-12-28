@@ -48,7 +48,7 @@ dependencies {
 
     implementation rootProject.ext.libraries.mmtextview
 
-    compile 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
+    implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
 
     testImplementation 'junit:junit:4.12'
 

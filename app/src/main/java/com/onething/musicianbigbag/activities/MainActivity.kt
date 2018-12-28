@@ -15,6 +15,14 @@ import java.util.*
 
 class MainActivity : BaseActivity(), OnItemClickListener<BaseVO> {
 
+    override fun getDisplayHomeBack(): Boolean {
+        return false
+    }
+
+    override fun getResourceView(): Int {
+        return R.layout.activity_main
+    }
+
     override fun onClickItem(t: BaseVO) {
         if (t is EventVO) {
             startActivity(EventDetailActivity.newIntent(this@MainActivity))
@@ -60,7 +68,6 @@ class MainActivity : BaseActivity(), OnItemClickListener<BaseVO> {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
             toolbar.setTitleTextColor(ContextCompat.getColor(applicationContext, R.color.white_full))
