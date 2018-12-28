@@ -23,11 +23,9 @@ import kotlinx.android.synthetic.main.fragment_event.view.*
 class EventFragment : BaseFragment() {
 
     companion object {
-
         fun newInstance() : EventFragment {
             return EventFragment()
         }
-
     }
 
     private lateinit var mAdapter : EventListAdapter

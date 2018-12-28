@@ -10,7 +10,8 @@ abstract class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(getResourceView())
 
-        supportActionBar!!.setDisplayHomeAsUpEnabled(getDisplayHomeBack())
+        if (supportActionBar != null)
+            supportActionBar!!.setDisplayHomeAsUpEnabled(getDisplayHomeBack())
 
     }
 
@@ -21,7 +22,7 @@ abstract class BaseActivity : AppCompatActivity() {
         }
         return true
     }
-    
+
     abstract fun getDisplayHomeBack(): Boolean
 
     abstract fun getResourceView(): Int
