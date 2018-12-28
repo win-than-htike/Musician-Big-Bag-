@@ -13,6 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -51,6 +52,11 @@ dependencies {
     implementation 'com.github.jgabrielfreitas:BlurImageView:1.0.1'
 
     testImplementation 'junit:junit:4.12'
+
+    //Google Map
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+
 
 
 

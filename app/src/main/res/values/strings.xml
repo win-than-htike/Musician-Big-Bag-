@@ -25,4 +25,5 @@
     <string name="title_event_group">Group</string>
     <string name="title_event_datetime"><![CDATA[Date & Time]]></string>
     <string name="title_event_location">Location</string>
+    <string name="action_share">Share</string>
 </resources>

@@ -10,6 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingEnd="@dimen/margin_medium_2"
+            android:paddingBottom="@dimen/margin_medium_2"
             android:clipToPadding="false"/>
 
 </FrameLayout>
